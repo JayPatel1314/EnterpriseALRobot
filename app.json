@@ -1,22 +1,13 @@
 {
-      "name": "KigyoRobot",
-      "description": "An Anime themed Telegram group management bot.",
-      "keywords": [
-         "telegram",
-         "anime",
-         "group",
-         "manager",
-         "Kigyo"
-      ],   
-   "repository": "https://github.com/JayPatel1314/EnterpriseALRobot",
    "addons": [
       {
          "options": {
-            "version": "12"
+            "version": "9.5"
          },
          "plan": "heroku-postgresql"
       }
    ],
+   "description": "An Anime themed Telegram group management bot.",
    "env": {
       "log": {
          "description": "Leave it as it is",
@@ -191,5 +182,15 @@
          "value": ""
       }
       
-   }
+   },
+   "keywords": [
+      "telegram",
+      "weeb",
+      "group",
+      "manager",
+      "Kigyō"
+   ],
+   "name": "Kigyō bot",
+   "repository": "https://github.com/AnimeKaizoku/Kigyōbot"
+}
 }
