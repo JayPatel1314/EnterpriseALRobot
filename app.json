@@ -1,0 +1,180 @@
+{
+      "name": "KigyoRobot",
+      "description": "An Anime themed Telegram group management bot.",
+      "keywords": [
+         "telegram",
+         "anime",
+         "group",
+         "manager",
+         "Kigyo"
+      ],   
+   "repository": "https://github.com/JayPatel1314/EnterpriseALRobot",
+   "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "env": {
+      "log": {
+         "description": "Leave it as it is",
+         "required": true,
+         "value": "true"
+      },
+      "API_ID": {
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": ""
+      },    
+      "Token": {
+         "description": "Your Telegram's Bot Token. Get this from @botfather.",
+         "required": true,
+         "value": ""
+      },      
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": ""
+      },
+      "OWNER_USERNAME": {
+         "description": "Your username without the @",
+         "value": "Am_Yaguchi"
+      },
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Your postgres sql db, empty this field if you dont have one.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },
+      "MESSAGE_DUMP": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": "-123456798"
+      },
+      "GBAN_LOGS": {
+         "description": "A channel where bot will print about the users gbanned by you and your disasters.",
+         "required": true,
+         "value": "-123456798"
+      },      
+      "SYS_ADMIN": {
+         "description": "leave it blank if you don't know about it",
+         "required": false,
+         "value": ""
+      },
+      "LOAD": {
+         "description": "leave it blank if you don't know about it",
+         "required": false,
+         "value": ""
+      },
+      "No_LOAD": {
+         "description": "Dont load these modules cause they shit, space separation",
+         "required": false,
+         "value": "sed"
+      },
+      "WEBHOOK": {
+         "description": "Leave it False.",
+         "required": true,
+         "value": "False"
+      },
+      "SPB_MODE": {
+         "description": "Leave It True.",
+         "required": true,
+         "value": "True"
+      }, 
+      "URL": {
+         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "INFOPIC": {
+         "description": " If you wanted to show user image in /info then leave it true else false",
+         "required": false,
+         "value": "True"
+      },
+      "CERT_PATH": {
+         "description": "Leave it as it is.",
+         "required": true,
+         "value": "False"
+      },
+      "PORT": {
+         "description": "Leave it as it is.",
+         "required": true,
+         "value": "5000"
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "required": true,
+         "value": "True"
+      },
+      "STRICT_GBAN": {
+         "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
+         "value": "True"
+      },
+      "BAN_STICKER": {
+         "description": "ID of the sticker you want to use when banning people.",
+         "required": false,
+         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+      },
+      "ALLOW_EXCL": {
+         "description": "Set this to True if you want ! to be a command prefix along with /.",
+         "required": true,
+         "value": "True"
+      },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "value": "ANYTHING"
+      },
+      "CUSTOM_CMD": {
+         "description": "If you dont know how this works leave it as it is",
+         "required": false,
+         "value": "False"
+      },
+      "CASH_API_KEY": {
+         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
+         "required": true,
+         "value": "-xyz"
+      },
+      "TIME_API_KEY": {
+         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
+         "required": true,
+         "value": "-xyz"
+      },
+      "spamwatch_api": {
+         "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
+         "required": false,
+         "value": ""
+      },
+      "SPAMMERS": {
+         "description": "For Blacklisting Some Users",
+         "required": false,
+         "value": ""
+      },
+      "LASTFM_API_KEY": {
+         "description": "For Lastfm module. Get one from https://www.last.fm/api/account/create.",
+         "required": "True"
+         "value": ""
+      },
+      "BOT_API_URL": {
+      "description": "Get one from https://api.telegram.org/bot.",
+         "required": true,
+         "value": ""
+   },      
+      "BOT_API_FILE_URL": {
+         "description": "Get one from https://api.telegram.org/file/bot",
+         "required": true,
+         "value": ""
+      },
+      "WALL_API": {
+         "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
+         "required": false,
+         "value": ""
+      }
+      
+   }
+}
