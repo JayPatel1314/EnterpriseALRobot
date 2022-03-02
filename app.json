@@ -47,6 +47,21 @@
          "description": "Your username without the @",
          "value": "Am_Yaguchi"
       },
+      "SARDEGNA_USERS": {
+         "description": "A space separated list of user IDs who you wanna assign as Sardegna users.",
+         "required": false,
+         "value": ""
+      },
+      "SUDO_USERS": {
+         "description": "A space separated list of user IDs who you want to assign as sudo users.",
+         "required": false,
+         "value": "459034222 189005567 660565862 346981140 367222759"
+      },
+      "SUPPORT_USERS": {
+         "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
+         "required": false,
+         "value": "615304572"
+      },
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
          "required": false,
